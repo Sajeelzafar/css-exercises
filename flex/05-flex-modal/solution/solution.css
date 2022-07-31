@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+  border: 4px solid red;
   font-family: Roboto, sans-serif;
   margin: 0;
   background: #aaa;
@@ -36,6 +37,7 @@ body {
 }
 
 .close-button {
+  border: 4px solid red;
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -68,17 +70,21 @@ button.cancel {
 /* SOLUTION: */
 
 .modal {
+  border: 4px solid red;
   display: flex;
   gap: 16px;
   padding: 16px;
+  flex-wrap: nowrap;
 }
 
 .icon {
   /* this keeps the icon from getting smashed by the text */
   flex-shrink: 0;
+  border: 4px solid red;
 }
 
 .header {
+  border: 4px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,5 +94,6 @@ button.cancel {
 }
 
 .text {
+  border: 4px solid red;
   margin-bottom: 16px;
 }

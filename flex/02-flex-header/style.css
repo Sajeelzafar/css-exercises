@@ -1,6 +1,13 @@
 .header  {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
   font-family: monospace;
   background: papayawhip;
+  border: 4px solid white;
+  flex: auto;
+  align-items: center;
 }
 
 .logo {
@@ -9,17 +16,36 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
+  color: blue;
   font-size: 22px;
   background: white;
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+.left-links ul{
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  padding: 25px;
+}
+
+.right-links ul{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  padding-right: 25px;
 }
